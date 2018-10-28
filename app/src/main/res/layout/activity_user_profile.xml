@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/wallpaper"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.anumabbas.traveljournal.SignUp">
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColorHint="#ffff"
+        android:textStyle="bold"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:textColorHint="#ffff"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:hint="Age" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/age"
+        android:layout_alignStart="@+id/age"
+        android:layout_below="@+id/age"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:textColorHint="#ffff"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:hint="City" />
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/city"
+        android:layout_alignStart="@+id/city"
+        android:layout_below="@+id/city"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:textColorHint="#ffff"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:hint="Country" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/country"
+        android:layout_alignStart="@+id/country"
+        android:layout_below="@+id/country"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:textColorHint="#ffff"
+        android:textStyle="bold"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:background="#191970"
+        android:text="Update Profile" />
+</RelativeLayout>

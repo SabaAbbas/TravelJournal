@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/wallpaper"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.anumabbas.traveljournal.Home">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:textStyle="bold"
+        android:background="#191970"
+        android:textColor="#ffff"
+        android:layout_marginTop="23dp"
+        android:width="200dp"
+        android:height="50dp"
+        android:onClick="onClickGoToExplore"
+        android:text="Explore" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#191970"
+        android:textColor="#ffff"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="24dp"
+        android:width="200dp"
+        android:height="50dp"
+        android:onClick="onClickGoToWishlist"
+        android:text="Wishlist" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#191970"
+        android:textColor="#ffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:width="200dp"
+        android:onClick="onClickGoToProfile"
+        android:height="50dp"
+        android:text="View Profile" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#191970"
+        android:textColor="#ffff"
+        android:layout_alignStart="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="27dp"
+        android:width="200dp"
+        android:height="50dp"
+        android:onClick="onClickGoToPosts"
+        android:text="View Posts" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button5"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#191970"
+        android:textColor="#ffff"
+        android:layout_alignStart="@+id/button5"
+        android:layout_below="@+id/button5"
+        android:layout_marginTop="19dp"
+        android:width="200dp"
+        android:height="50dp"
+        android:onClick="onClickGoToDiary"
+        android:text="Create Diary" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button6"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#191970"
+        android:textColor="#ffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:height="50dp"
+        android:width="100dp"
+        android:onClick="onClickGoToLogin"
+        android:text="Logout" />
+
+</RelativeLayout>

@@ -40,7 +40,7 @@ public class Home extends AppCompatActivity {
 
     public void onClickGoToLogin(View view) {
 
-        Intent i = new Intent(getApplicationContext(),Login.class);
+        Intent i = new Intent(getApplicationContext(),MainActivity.class);
         startActivity(i);
     }
 }

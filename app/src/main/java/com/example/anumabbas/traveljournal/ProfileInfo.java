@@ -13,6 +13,10 @@ private String key;
     private String City;
     private String Country;
     private String Phone;
+    public ProfileInfo()
+    {
+
+    }
 
     public ProfileInfo(String name, String age, String city, String country, String phone,String ui,String k) {
         Name = name;

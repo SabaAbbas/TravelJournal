@@ -17,8 +17,12 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 
 public class SignUp extends AppCompatActivity {
+
+
+
 
     private FirebaseAuth mAuth;
     EditText Email;
@@ -75,6 +79,9 @@ public class SignUp extends AppCompatActivity {
         }
 
     }
+
+
+
 
 
 }

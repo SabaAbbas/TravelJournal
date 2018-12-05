@@ -38,4 +38,37 @@
         tools:layout_editor_absoluteX="127dp"
         tools:layout_editor_absoluteY="16dp" />
 
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+         />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" >
+
+    </com.google.android.gms.common.SignInButton>
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:background="#191970"
+        android:textColor="#ffff"
+        android:onClick="GotoLogin"
+        android:layout_marginTop="24dp"
+        android:text="Already a member? Login!" />
+
 </RelativeLayout>

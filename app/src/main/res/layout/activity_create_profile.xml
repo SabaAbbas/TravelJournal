@@ -16,8 +16,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
         android:ems="10"
+        android:textColor="#ffff"
         android:inputType="textPersonName"
-        android:text="Enter Country" />
+        android:textColorHint="#ffff"
+        android:hint="Enter Country" />
 
     <EditText
         android:id="@+id/editText6"
@@ -28,8 +30,10 @@
         android:layout_below="@+id/editText4"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:textColor="#ffff"
         android:inputType="textPersonName"
-        android:text="Enter City" />
+        android:textColorHint="#ffff"
+        android:hint="Enter City" />
 
     <EditText
         android:id="@+id/editText3"
@@ -40,8 +44,10 @@
         android:layout_alignStart="@+id/editText4"
         android:layout_marginTop="100dp"
         android:ems="10"
+        android:textColor="#ffff"
         android:inputType="textPersonName"
-        android:text="Enter Name" />
+        android:textColorHint="#ffff"
+        android:hint="Enter Name" />
 
     <EditText
         android:id="@+id/editText4"
@@ -51,8 +57,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp"
         android:ems="10"
+        android:textColor="#ffff"
         android:inputType="textPersonName"
-        android:text="Enter Age" />
+        android:textColorHint="#ffff"
+        android:hint="Enter Age" />
 
     <EditText
         android:id="@+id/editText15"
@@ -63,8 +71,10 @@
         android:layout_below="@+id/editText14"
         android:layout_marginTop="19dp"
         android:ems="10"
+        android:textColor="#ffff"
         android:inputType="phone"
-        android:text="Enter Phone Number" />
+        android:textColorHint="#ffff"
+        android:hint="Enter Phone Number" />
 
     <Button
         android:id="@+id/button10"

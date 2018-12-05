@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="114dp"
         android:ems="10"
-android:textColorHint="#ffff"
+        android:textColorHint="#ffff"
         android:textStyle="bold"
         android:inputType="textPersonName"
         android:hint="Enter Email ID" />
@@ -34,18 +34,6 @@ android:textColorHint="#ffff"
         android:hint="Enter Password"
         android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText10"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
-        android:background="#191970"
-        android:text="Sign In"
-        android:textColor="#ffff"
-        android:textSize="20dp" />
-
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
@@ -62,5 +50,17 @@ android:textColorHint="#ffff"
         android:textColor="#ffff"
         android:textSize="30dp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:textColor="#fff"
+        android:background="#191970"
+        android:onClick="onClickGoToHome"
+        android:text="Sign In" />
 
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package com.example.anumabbas.traveljournal;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -33,12 +34,14 @@ public class CreateDiary extends Activity {
         spinner1.setAdapter(dataAdapter);
     }
 
-    public void onClickShowToast(View v)
+    public void onClickMethod(View v)
     {
         if(v.getId() == R.id.button7)
         {
             MessageBox(" Your Diary has been created Successfuly!");
         }
+        Intent i = new Intent(getApplicationContext(),uploadMedia.class);
+        startActivity(i);
     }
 
     public void MessageBox(String message)

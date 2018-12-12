@@ -7,22 +7,6 @@
     android:background="@drawable/wallpaper"
     tools:context="com.example.anumabbas.traveljournal.CreateDiary">
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_below="@+id/editText"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Location of Trip"
-        android:textColorHint="#ffff"
-        android:textColor="#ffff"
-        android:textSize="20dp"
-        android:textStyle="bold" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -30,10 +14,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginTop="35dp"
         android:width="300dp"
         android:height="50dp"
-        android:text="Create Your Diary"
+        android:text=" Welcome to your Diary"
         android:textColor="#ffff"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -41,48 +27,57 @@
         tools:layout_editor_absoluteX="51dp"
         tools:layout_editor_absoluteY="32dp" />
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="247dp"
-        android:layout_height="45dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="201dp" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_below="@+id/spinner1"
-        android:textSize="20dp"
-        android:textColor="#ffff"
-        android:textStyle="bold"
-        android:layout_marginTop="44dp"
-        android:ems="10"
-        android:textColorHint="#ffff"
-        android:inputType="textPersonName"
-        android:hint="Title of Trip" />
-
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/button14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="34dp"
+        android:onClick="GoToWC"
+        android:text="Within City Trips" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_alignEnd="@+id/button14"
+        android:layout_alignRight="@+id/button14"
+        android:layout_below="@+id/button14"
+        android:onClick="GoToOC"
+        android:layout_marginTop="13dp"
+        android:text="Out of City Trips" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_alignLeft="@+id/button14"
+        android:layout_alignStart="@+id/button14"
+        android:layout_below="@+id/button15"
+        android:onClick="GoToOS"
+        android:layout_marginTop="20dp"
+        android:text="Out of State Trips" />
+
+    <Button
+        android:id="@+id/button17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/button16"
+        android:textColor="#000"
+        android:textSize="15dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="41dp"
-        android:width="200dp"
-        android:height="50dp"
-        android:background="#191970"
+        android:layout_marginTop="67dp"
         android:onClick="onClickMethod"
-        android:text="Proceed"
-        android:textColor="#ffff"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+        android:text="Create New Post" />
 
 
 </RelativeLayout>

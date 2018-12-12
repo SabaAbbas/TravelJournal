@@ -28,7 +28,7 @@ import com.google.firebase.storage.UploadTask;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class WishList extends AppCompatActivity {
+public class CreatePost extends AppCompatActivity {
 
     ImageView img;
     private static Bitmap Image = null;
@@ -53,14 +53,14 @@ public class WishList extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wish_list);
+        setContentView(R.layout.activity_create_post);
 
-        img=findViewById(R.id.imageView3);
-        edt=findViewById(R.id.loc);
-        btn=findViewById(R.id.btn);
-        edt2=findViewById(R.id.desc);
-        spn=findViewById(R.id.spinner2);
-        rtn=findViewById(R.id.ratingBar2);
+        img=findViewById(R.id.imageView2);
+        edt=findViewById(R.id.editText2);
+        btn=findViewById(R.id.button7);
+        edt2=findViewById(R.id.editText);
+        spn=findViewById(R.id.spinner);
+        rtn=findViewById(R.id.ratingBar);
         mStorageRef= FirebaseStorage.getInstance().getReference();
 
         mDatabaseRef= FirebaseDatabase.getInstance().getReference();
@@ -107,15 +107,23 @@ public class WishList extends AppCompatActivity {
 
                             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                             uid = user.getUid();
+                            if (spinner.equals("With in City")) {
+                                reference = mDatabaseRef.child("Users").child(uid).child("WithInCity");
+                            } else if (spinner.equals("Out of City")) {
 
-                                reference = mDatabaseRef.child("Users").child(uid).child("WishList");
+                                reference = mDatabaseRef.child("Users").child(uid).child("OutOfCity");
 
+
+                            } else {
+                                reference = mDatabaseRef.child("Users").child(uid).child("OutOfState");
+
+                            }
 
                             Post p = new Post(downloadURL, description, location, rating);
 
                             reference.push().setValue(p);
 
-                            Intent intent = new Intent(getApplicationContext(), Home.class);
+                            Intent intent = new Intent(getApplicationContext(), CreateDiary.class);
                             finish();
                             startActivity(intent);
                         }

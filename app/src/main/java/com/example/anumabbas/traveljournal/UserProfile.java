@@ -49,7 +49,7 @@ public class UserProfile extends AppCompatActivity {
 
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref= database.getReference("Users/"+uid);
+        DatabaseReference ref= mDatabaseRef.child("Users").child(uid).child("Profile");
 
         ref.addValueEventListener(new ValueEventListener() {
             @Override
@@ -99,7 +99,7 @@ public class UserProfile extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String uid=user.getUid();
 
-        DatabaseReference ref= mDatabaseRef.child("Users").child(uid);
+        DatabaseReference ref= mDatabaseRef.child("Users").child(uid).child("Profile");
         String key=ref.push().getKey();
         ProfileInfo prof=new ProfileInfo(name,age,city,country,phone,uid,key);
 

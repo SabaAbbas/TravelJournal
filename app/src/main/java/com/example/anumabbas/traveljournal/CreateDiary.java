@@ -18,29 +18,14 @@ public class CreateDiary extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_diary);
-        addItemsOnSpinner1();
+
     }
 
-    public void addItemsOnSpinner1() {
-
-        spinner1 = (Spinner) findViewById(R.id.spinner1);
-        List<String> list = new ArrayList<String>();
-        list.add("Within City Trips");
-        list.add("Out of City Trips");
-        list.add("Out of State Trips");
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
-                R.layout.spinner, list);
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner1.setAdapter(dataAdapter);
-    }
 
     public void onClickMethod(View v)
     {
-        if(v.getId() == R.id.button7)
-        {
-            MessageBox(" Your Diary has been created Successfuly!");
-        }
-        Intent i = new Intent(getApplicationContext(),uploadMedia.class);
+
+        Intent i = new Intent(getApplicationContext(),CreatePost.class);
         startActivity(i);
     }
 
@@ -49,4 +34,18 @@ public class CreateDiary extends Activity {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
+    public void GoToWC(View view) {
+
+        Intent i = new Intent(getApplicationContext(),WithinCityTrips.class);
+        startActivity(i);
+    }
+
+    public void GoToOC(View view) {
+        Intent i = new Intent(getApplicationContext(),OutOfCity.class);
+        startActivity(i);
+    }
+    public void GoToOS(View view) {
+        Intent i = new Intent(getApplicationContext(),OutOfState.class);
+        startActivity(i);
+    }
 }
